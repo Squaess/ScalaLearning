@@ -1,18 +1,51 @@
-*.class
-*.log
+# bloop and metals
+.bloop
+.bsp
+.metals
 
-# sbt specific
-.cache/
-.history/
-.lib/
-dist/*
+# scala 3
+.tasty
+
+# vs code
+.vscode
+
+# sbt
+# (may want to keep parts of 'project')
+bin/
+project/
 target/
-lib_managed/
-src_managed/
-project/boot/
-project/plugins/project/
+build/
 
-# Scala-IDE specific
-.scala_dependencies
+# eclipse
+build
+.classpath
+.project
+.settings
 .worksheet
+
+# intellij idea
+*.log
+*.iml
+*.ipr
+*.iws
 .idea
+
+# mac
+.DS_Store
+
+# other?
+.history
+.scala_dependencies
+.cache
+.cache-main
+
+#general
+*.class
+.gitignore
+
+#MagicTheGathering files
+src/main/resources/MagicTheGathering
+src/main/resources/archive.zip
+
+# ipynb
+.ipynb_checkpoints

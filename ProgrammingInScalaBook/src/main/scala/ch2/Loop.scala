@@ -1,8 +1,8 @@
-package ch2.loops
+package ch2
 
-object TestLoop {
-  /**
-    * This example show different type of usage of
+object Loop {
+
+  /** This example show different type of usage of
     * scala loops. Most of them are implemented in
     * a bad way, as functions should not have a side
     * effect, which printing is. In my opinion best()
@@ -18,10 +18,10 @@ object TestLoop {
   }
 
   def second(args: Array[String]): Unit = {
-    args.foreach( arg => println(arg))
+    args.foreach(arg => println(arg))
   }
 
-  def best(args: Array[String]): Unit ={
+  def best(args: Array[String]): Unit = {
     args.foreach(println)
   }
 
